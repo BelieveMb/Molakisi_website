@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue sur Molakisi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="style/images/logo.png" type="image/x-icon">
+    <!--Google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../../style/css/style.css">
+    <link rel="stylesheet" href="../../style/css/other_style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header__large">
+            <!--logo du header-->
+            <div class="header__logo">
+            <a href="../home/" ><img src="../../style/images/logo_black.png" alt=""></a>
+            </div> 
+            <nav>
+                <ul>
+                    <li><a href="../home/">Accueil</a></li>
+                    <li><a href="../devenir_tutors/">Devenez un répétiteur</a></li>
+                    <li><a href="../trouver_tutors/">Trouver un répétiteur</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="#"  class="header__btn"  onclick="document.getElementById('id01').style.display='block'"><i class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        
+       <!--div class="header__small">
+            !--logo du header--
+            <div class="header__logo">
+                <a href="index.html" ><img src="images/logo_black.png" alt=""></a>
+            </div> 
+            <nav id="myLinks">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Devenez un répétiteur</a></li>
+                    <li><a href="">Trouver un répétiteur</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </nav>
+        
+            <a href="javascript:void(0);" class="burger" onclick="btnBurger()">
+            <i class="bi bi-menu-button-wide"></i>
+        </a>
+       </div-->
+    
+    <script>
+        //le script du burger pour le mobile et le responsive
+        function btnBurger() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+        
+
+    </header>
+
+ 
+  
+   <main>
+        <!-- premiere section trouver un répétiteur  -->
+        <section class="repetiteur ">
+            <div class="bg_respo">
+                <div class="repetiteur__bloc__text">
+                    <p>
+                        Pour <b>un meilleur apprentissage</b> de <b>vos enfants</b>
+                        , nous mettons à votre disposition <b>des répétiteurs expérimentés</b>
+                        proche de vous !
+                    </p> 
+                
+                    <a href="../trouver_tutors/" >Trouver un répétiteur</a>
+                    
+                </div>
+            </div>
+
+        </section>
+
+        <!-- la section du texte welcome -->
+        <section class="bloc__bienvenue">
+            <h2>Bienvenue, laissez nous vous guider !</h2>
+             <p>Molakisi vous aider à vous connecter avec des tuteurs qualifiés dans votre région
+                maîtriser, les compétences et les examens qui competent pour vous.</p>
+        </section>
+
+        <!-- la section du container avec 4 blocs -->
+        <section class="container__section4">
+            <div>
+                <span class="material-symbols-outlined icon__bloc">group</span>
+                <h3>Professionnels de confiance</h3>
+                <p> 
+                    Chaque tuteur est expérimenté, amical, sélectionné manuellement et minutieusement contrôlé pour la plus haute qualité.
+                </p>
+            </div>
+
+            <div>
+                <span class="material-symbols-outlined icon__bloc">calendar_month        </span>
+                <h3>Apprenez à votre rythme</h3>
+                <p> 
+                    Réservez en ligne en 60 secondes environ et planifiez vos cours particuliers selon votre propre emploi du temps.
+                </p>
+            </div>
+
+            <div>
+                <span class="material-symbols-outlined icon__bloc">verified_user</span>
+                <h3>Sûr et sécurisé</h3>
+                <p> 
+                    Reconnu par des centaines de parents heureux, de professionnels et d'étudiants avec un taux de réussite de plus de 90 %.
+                </p>
+            </div>
+        </section>
+
+        <!-- info de Molakisi avec une photo et un texte -->
+        <section class="info__molakisi">
+            <div class="info__image">
+                <img src="../../style/images/child__course.jpg" alt="">
+            </div>
+            <div class="info__text">
+                <h3>Besoin de tuteurs à domicile pour vos enfants ?</h3>
+                <h4>Faites avancer vos enfants tôt</h4>
+                <p>
+                    Améliorez les performances en classe, obtenez de l'aide pour les devoirs, renforcez la confiance dans les points faibles, soyez fier des résultats de vos enfants.
+                </p>
+
+                <h4> Engagez des tuteurs en qui vous pouvez avoir confiance</h4>
+                <p>
+                    Obtenez des tuteurs à domicile entièrement contrôlés qui sont spécifiquement expérimentés
+                     dans l'enseignement, le mentorat et l'inspiration d'enfants comme le vôtre.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- container faq -->
+        <section class="container__faq">
+            <div class="faq__title">
+                <h2>faq</h2>
+                <b>Qui sommes nous ?</b>
+            </div>
+            <div class="faq__text">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Quisquam nisi amet voluptas ut sint quod saepe, non dolorum 
+                    sed ea accusantium quas pariatur 
+                    voluptates exercitationem id rem earum veniam tenetur!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Quisquam nisi amet voluptas ut sint quod saepe, non dolorum 
+                    sed ea accusantium quas pariatur 
+                    voluptates exercitationem id rem earum veniam tenetur!
+                </p>
+                <p>
+                    <a href="" name="trouver_rep">Voir plus...</a>
+                </p>
+
+            </div>
+        </section>
+
+        <!-- container partner -->
+        <section class="container__partner">
+            <div class="partner__text">
+                <h2>Lorem ipsum </h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Quisquam nisi amet voluptas ut sint quod saepe, non dolorum 
+                    sed ea accusantium quas pariatur 
+                    voluptates exercitationem id rem earum veniam tenetur!
+                </p>
+            </div>
+            <div class="partner__logo">
+                <img src="../../style/images/logo_partner.jpg" alt="">
+                <img src="../../style/images/logo_partner.jpg" alt="">
+                <img src="../../style/images/logo_partner.jpg" alt="">
+                <img src="../../style/images/logo_partner.jpg" alt="">
+                <img src="../../style/images/logo_partner.jpg" alt="">
+                <img src="../../style/images/logo_partner.jpg" alt="">
+                <img src="../../style/images/logo_partner.jpg" alt="">
+                <img src="../../style/images/logo_partner.jpg" alt="">
+                
+            </div>
+        </section>
+        <!-- Le modal pour le login -->
+        <section>
+            <div id="id01" class="modal">
+                <form class="modal-content" id="modal__login" action="/action_page.php">
+                    <div class="container__modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer le modal"><i class="bi bi-x-circle"></i></span>
+                        <h2>Se connecter à Molakisi</h2>
+                        <p>Complètez pour accèder à votre compte.</p>
+                        <hr>
+                        <!-- <label for="email"><b>Email</b></label> -->
+                        <div class="input__modal">
+                            <input type="text" placeholder="Email" name="email" autocomplete="off" required>
+                            <input type="password" placeholder="Mot de passe" name="psw" autocomplete="off" required>
+                        </div>
+                
+                        <!-- <label for="psw"><b>Mot de passe</b></label> -->
+                        <div class="clearfix btn__connexion">
+                            <button type="submit" class="connexion">Connexion </button>
+                        </div>
+                
+                    
+                       
+                        <div class="modal__bottom__form">
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Se Souvenir de moi
+                            </label>
+                            <a href="" class="modal__bottom__a">Mot de passe oublié ?</a>
+
+                        </div>
+                        <hr>
+                        <div class="modal__flex">
+                            <p>Nouveau Membre ? <a href="#" id="show__inscrip" class="modal__bottom__a">S'inscrire</a></p>
+                            <p><a href="" class="modal__bottom__a"> Besoin d'aide ?</a></p>
+                        </div>
+
+                
+                        <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+                
+                        
+                    </div>
+                </form>
+                <form class="modal-content" id="modal__inscrip" action="/action_page.php">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer le modal"><i class="bi bi-x-circle"></i></span>
+                    <div class="container__modal">
+                        <h2>Bienvenue à Molakisi</h2>
+                        <p>Réjoins Molakisi avec des tuteurs de qualités et qualifiés.</p>
+                        <hr>
+                        <div class="input__modal">
+                            <div class="modal__flex">
+                                <input type="text" placeholder="Nom" name="name" autocomplete="off" required>
+                                <input type="text" placeholder="Prenom" name="psw" autocomplete="off" required>
+                            </div>
+                            <input type="text" placeholder="Email" name="email" autocomplete="off" required>
+                            <input type="password" placeholder="Password" name="pass" autocomplete="off" required>
+                            <input type="password" placeholder="Retaper Password" name="pass" autocomplete="off" required>
+                           
+                        </div>
+                
+                        <!-- <label for="psw"><b>Mot de passe</b></label> -->
+                        <div class="clearfix btn__connexion">
+                            <button type="submit" class="connexion">S'inscrire</button>
+                        </div>
+                
+                        
+                        <hr>
+                        <div class="modal__bottom__form">
+                            <p>Déjà membre ?, <a href="#" id="show__login" class="modal__bottom__a">Se connecter</a> </p>
+                            <a href="" class="modal__bottom__a">Mot de passe oublié ?</a>
+
+                        </div>
+
+                
+                        <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+                
+                        
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Le modal pour le login -->
+
+
+        <!-- footer molakisi -->
+        <footer class="container__footer">
+            <div class="footer__logo">
+                <a href="index.html"><img src="../../style/images/logo_white.png" alt=""></a>
+            </div>
+            <div class="footer__text">
+                <h3>A Propos<span>__________</span></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur,                     adipisicing elit. Laboriosam perspiciatis
+                    labore unde quasi assumenda dolorem, corrupti
+                </p>
+            </div>
+            <div class="footer__text">
+                <h3>Nos Adresses<span>__________</span></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam perspiciatis
+                    labore unde quasi assumenda dolorem, corrupti
+                   
+                </p>
+            </div>
+            <div class="footer__text">
+                <h3>Rejoinez nous <span>__________</span></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur consectetur
+                    consecteturconsectetur, Laboriosam perspiciatis                   
+                </p>
+                <ul>
+                    <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                    <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                    <li><a href=""><i class="bi bi-snapchat"></i></a></li>
+                    <li><a href=""><i class="bi bi-pinterest"></i></a></li>
+                </ul>
+            </div>
+
+        </footer>
+        
+        <div class="copyright">
+            <p>Copyright @Molakisi2023</p>
+        </div>
+
+
+   </main>
+   
+   <script>
+        // le js du modal
+        var modal = document.getElementById('id01');
+        var modal__inscrip = document.getElementById('modal__inscrip');
+        var modal__login = document.getElementById('modal__login');
+        var show__inscrip = document.getElementById('show__inscrip');
+        var show__login = document.getElementById('show__login');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        //modal__inscrip doit etre off par defaut
+        modal__inscrip.style.display = "none";
+        //lorsqu'on clique sur btn modal2, on cache le modal 1 et on affiche le 2
+        show__inscrip.onclick = function(event) {
+            modal__login.style.display = "none";
+            modal__inscrip.style.display = "block";
+        }
+        show__login.onclick = function(event) {
+            modal__inscrip.style.display = "none";
+            modal__login.style.display = "block";
+        }
+   </script>
+</body>
+</html>
