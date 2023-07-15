@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="style/images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="public/images/logo.png" type="image/x-icon">
     <!--Google icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--Bootstrap icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="../../style/css/style.css">
-    <link rel="stylesheet" href="../../style/css/other_style.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/other_style.css">
     
 </head>
 <body>
@@ -23,55 +23,23 @@
         <div class="header__large">
             <!--logo du header-->
             <div class="header__logo">
-            <a href="index.html" ><img src="../../style/images/logo_black.png" alt=""></a>
+            <a href="../home/" ><img src="../../public/images/logo_black.png" alt=""></a>
             </div> 
             <nav>
                 <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Devenez un répétiteur</a></li>
-                    <li><a href="">Trouver un répétiteur</a></li>
+                    <li><a href="../home/">Accueil</a></li>
+                    <li><a href="../devenir_tutors/">Devenez un répétiteur</a></li>
+                    <li><a href="../trouver_tutors/">Trouver un répétiteur</a></li>
                     <li><a href="">FAQ</a></li>
-                    <li><a href="../login/" class="header__btn"><i class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+                    <li><a href="#"  class="header__btn"  onclick="document.getElementById('id01').style.display='block'"><i class=" bi bi-box-arrow-in-right"></i> Login</a></li>
+
                 </ul>
             </nav>
         </div>
-        
-       <!--div class="header__small">
-            !--logo du header--
-            <div class="header__logo">
-                <a href="index.html" ><img src="images/logo_black.png" alt=""></a>
-            </div> 
-            <nav id="myLinks">
-                <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Devenez un répétiteur</a></li>
-                    <li><a href="">Trouver un répétiteur</a></li>
-                    <li><a href="">FAQ</a></li>
-                </ul>
-            </nav>
-        
-            <a href="javascript:void(0);" class="burger" onclick="btnBurger()">
-            <i class="bi bi-menu-button-wide"></i>
-        </a>
-       </div-->
-    
-    <script>
-        //le script du burger pour le mobile et le responsive
-        function btnBurger() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
-        
-
     </header>
 
     <main>
-         <!-- bloc pour l'inscription -->
+         <!-- bloc pour l'inscription --
          <section>
             <div class="container__inscription">
                 <form class="modal-content" action="/action_page.php">
@@ -90,7 +58,7 @@
                            
                         </div>
                 
-                        <!-- <label for="psw"><b>Mot de passe</b></label> -->
+                        -- <label for="psw"><b>Mot de passe</b></label> --
                         <div class="clearfix btn__connexion">
                             <button type="submit" class="connexion">S'inscrire</button>
                         </div>
@@ -106,7 +74,6 @@
                         </div>
 
                 
-                        <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
                 
                         
                     </div>
@@ -118,9 +85,86 @@
             </div>
         </section>
         <!-- Le modal pour le login -->
+        <section class="container__inscrip">
+            <form id="regForm" class="input__modal" action="">
 
+                <h2>S'inscrivez vous dès maintenant :</h2>
+                
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">
+                  <p><input type="text"   placeholder="Nom..." name="nom" oninput="this.className = ''"></p>
+                  <p><input type="text"   placeholder="Post Nom..."  oninput="this.className = ''"></p>
+                  <p><input type="text"   placeholder="Prenom..." oninput="this.className = ''"></p>
+                </div>
+                
+                <div class="tab">
+                  <div>
+                    <label for="dateNais">Sexe</label>
+                    <select name="" id="">
+                        <option value="" selected>Choisir</option>
+                        <option value="Masculin">Masculin</option>
+                        <option value="Feminin">Feminin</option>
+                    </select>
+                 </div>
+                 <div>
+                    <label for="dateNais">Date de Naissance</label>
+                    <input type="date"   name="dateNais" oninput="this.className = ''">
+                 </div>
+                    
+                  <div>
+                    <textarea placeholder="Sujet..." oninput="this.className = ''"></textarea>
+                  </div>
+
+                </div>
+                
+                <div class="tab">
+                    <div>
+                        <textarea placeholder="Objectifs..." oninput="this.className = ''"></textarea>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Adresse..." oninput="this.className = ''">
+                    </div>
+                    <div>
+                        <label for="dateNais">Tuteur Choisi</label>
+                        <select name="" id="">
+                            <option value="" selected>Choisir</option>
+                            <option value="Micheal">Micheal</option>
+                            <option value="Christian">Christian</option>
+                            <option value="Francois">Francois</option>
+                            <option value="Siméon">Siméon</option>
+                        </select>
+                     </div>
+                </div>
+                
+                <div class="tab">Responsable Info:
+                    <div>
+                        <input type="email" placeholder="Email..." oninput="this.className = ''">
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="Téléphone..." oninput="this.className = ''">
+                    </div>
+                </div>
+                
+                <div style="overflow:auto;">
+                  <div  class="btn__connexion ">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+                  </div>
+                </div>
+                
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                </div>
+                
+                </form>
+        </section>
     </main>
     <!-- Button to open the modal -->
+    <script src="../../public/js/inscription_user.js"></script>
    
 </body>
 </html>

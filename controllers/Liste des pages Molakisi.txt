@@ -1,0 +1,114 @@
+Liste des pages Molakisi
+
+Note: Cette liste ne comprends pas encore les pages du dashboard.
+0. ajouter un loading pour le commencement
+1. Page d'accueil (à moi)♥
+2. Login Utilisateur (à moi)♥
+3. Inscription utilisateur (à moi)♥
+4. Devenir Tuteur -> https://tutors.tuteria.com/ (à moi) ♥
+5. Formulaire de demande d'ajout en tant que tuteur 
+/popup tutor btn Apply now \arranger les champs\ (postuler)
+6. Trouver un répétiteur -> https://www.tuteria.com/s/hometutors toute la page sauf
+ (à moi) patrner and temoignage \en__cours
+7. Liste des profils de tuteurs -> 2ee section de https://tutors.tuteria.com/ ♥ 
+	-> je l'ai gardé dans la page 6 trouver un répétiteur
+8. Profil unique  de tuteur -> wait for back end
+9. Formulaire de demande de tutorat -> 5e page avec des champs différents
+10. Page d'attente ->pop up(à moi)
+11.ajouter le bouton retour en haut
+
+----------------------------
+Descriptions de chaque page
+----------------------------
+
+1. Page d'accueil : Pas besoin d'explications
+
+2. Login : Page de connexion de chaque utilisateur
+
+3. Inscription : Page d'inscription
+
+4. Devenir tuteur :  Cette page donne des explications sur les avantages à devenir tuteur chez Molakisi (cfr Tuteria)
+
+5. Demande d'ajout : Cette page comprend le formulaire qui permet aux intéressés de fournir les informations nécessaires à la candidature
+
+6. Trouver un répétiteur : Dans cette page on donne un bref aperçu de comment rechercher un tuteur
+
+7. Liste Tuteurs : Cette page liste tous les tuteurs de la plateforme
+
+8. Tuteur :  Cette page montre en détail les informations concernant un tuteur en particulier
+
+9. Demande de cours :  Une fois le client satisfait du profil du tuteur, cette page lui demande de remplir les informations liées à l'apprenant concerné.
+
+
+Champs des formulaires 
+-----------------------
+
+Formulaire 1 : Candidature Prof
+
+- Nom
+- Prenom
+- Postnom
+/*- lieu de naissance -> 
+- date de naissance*/
+- Sexe
+- Photo
+- Ecole d'attache
+- Cours enseignés
+- Années d'expérience
+- CV
+- Addresse mail
+- Numéro de téléphone
+- Montant mensuel
+
+
+
+Formulaire 2 : Inscription élève
+
+- Nom
+- Prenom
+- Postnom
+- Sexe 
+- Dtae de naissance
+- Classe
+- Sujets 
+- Objectif
+- Adresse
+- Tuteur choisi
+- Email du parent
+- Numero portable du parent
+
+create table t_candidature(
+    id_cand int AUTO_INCREMENT not null,
+    nom varchar(25),
+    prenom varchar(25),
+    postnom varchar(25),
+    photo varchar(100),
+    cour varchar(25),
+    horaire varchar(25),
+    cv varchar(100),
+    CONSTRAINT pk_cand PRIMARY KEY (id_cand));
+create table t_eleve(
+    id_eleve int AUTO_INCREMENT not null,
+    nom varchar(25),
+    prenom varchar(25),
+    postnom varchar(25),
+    cour varchar(25),
+    objetif varchar(25),
+    horaire varchar(25),
+    adresse varchar(25),
+    classe varchar(100),
+    CONSTRAINT pk_eleve PRIMARY KEY (id_eleve));
+create table t_users(
+id_users int AUTO_INCREMENT not null,
+    name varchar(25),
+    email varchar(25),
+    pass varchar(25),
+    CONSTRAINT pk_users PRIMARY KEY (id_users));
+create table t_professor(
+id_pro int AUTO_INCREMENT not null,
+    name varchar(25),
+    email varchar(25),
+    pass varchar(25),
+    CONSTRAINT pk_professor PRIMARY KEY (id_pro));
+
+

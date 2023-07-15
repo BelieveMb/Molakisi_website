@@ -1,0 +1,155 @@
+/*--- le responsive de la page
+    -trouver tutor.html in tutor.css
+*/
+:root{
+    --padding-respo: 1rem;   
+}
+/*---######-- ours variables ----*/
+
+@media only screen and (min-width: 300px) and (max-width: 850px) {
+
+ /*--##########-------Page trouver un tutors-----------------------*/
+    .container__tutors .bg_trans{
+        display: block;
+        align-items: center;
+        justify-content: center; 
+        padding: var(--padding-respo);
+
+    }
+    .bg_trans div {
+        width: 90%;
+     }
+    .container__tutors div h2{
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        margin: 8rem 0 0 0;
+    }
+    .btn_get_tutor{
+        padding: 0.5rem 1rem;
+        border-radius: 0.8rem;
+        font-size: 0.8rem;
+    }
+    /*---------------------section 3 =  Les avantages du répétiteur-----------------------*/
+    .container__avance{
+        padding: var(--padding-respo);
+    }
+    .avance__detail{
+        margin: 0.8rem 0;
+        display: block;
+        gap: 1rem;
+    }
+    .avance__detail .bloc1 h4{
+        font-size: 1.2rem;
+        margin: 0.2rem 0;
+    }
+    /*---------------------section trois =  La satisfaction avec un répétiteur-----------------------*/
+    .container__satisfaction{
+        display: block;
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+    }
+    .satisfaction__text{
+        padding: var(--padding-respo);
+    }
+    .satisfaction__icon{
+        font-size: 3rem;
+    }
+    .satisfaction__text h2{
+        font-size: 1.6rem;
+        line-height: 3rem;
+        margin: 0.5rem 0;
+        font-weight: 900;
+    }
+    .satisfaction__img img{
+        width: 20rem;
+        height: auto;
+    }
+      /*---------section présentation devenir tutor---------*/
+    .container__liste {
+        text-align: center;
+        padding: var(--padding-respo);
+    }
+    .liste__title{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    .liste__title h2, .tutor__stat h2{
+        font-size: 1.2rem;
+        margin-bottom: 0.9rem;
+    }
+    /*---------------------pour la page devenir_tutors/-----------------------*/
+    .container__tutor{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.6rem;
+        padding: var(--padding-respo);
+        border-top: 2px solid #111111be;
+        margin-bottom: 2rem;
+    }
+    .tutor__text h2{
+        font-size: 2.5rem;
+        margin-top: 0.5rem;
+        line-height: 2.7rem;
+    }
+    .tutor__btn{
+        border-radius: 0.6rem;
+        padding: var(--padding-respo);
+        font-size: 1rem;
+    }
+    .tutor__image{
+        margin: 1.5rem 0;
+        height: 40vh;
+        width: 100%;
+        padding: 0;
+    }
+    /*------------section tutor_stat-----*/
+    .tutor__stat{
+        display: flex;
+        flex-direction: column;
+        margin: 12rem 0 1rem 0;
+    }
+    .stat__title{
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    .stat__number{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.8rem;
+        margin: 2rem 0;
+        font-size: 1rem;
+    }
+    /*---------section statistique tutor---------*/
+    .tutor__student{
+        padding: var(--padding-respo);
+        height: 120vh;
+
+    }
+    .student__title{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    } 
+    .student__title h2{
+        font-size: 2.3rem;
+        font-weight: bolder;
+        margin-right: 0rem;
+    }
+    .student__detail{
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem 0 0 0;
+    }
+    /*---------section présentation profil de tutor---------*/
+    /*------------------Page tutors_postuler-------------*/
+    .container__inscription{
+        margin-bottom: 4rem;
+    }
+  .form__postuler{
+      width: 100%;
+      margin: 3rem 2rem;
+  }
+}     
