@@ -1,5 +1,10 @@
  // le js du modal
  var modal = document.getElementById('id01');
+ var modal_inscript = document.getElementById('modal__inscript');
+ var modal_login = document.getElementById('modal__login');
+ var btn_login = document.getElementById('btn__login');
+ var btn_inscript = document.getElementById('btn__inscript');
+ 
 
  // When the user clicks anywhere outside of the modal, close it
  window.onclick = function (event) {
@@ -7,6 +12,17 @@
          modal.style.display = "none";
      }
  };
+ //pour afficher l'inscript
+ btn_inscript.onclick = function (event) {
+      modal_login.style.display = "none";
+      modal_inscript.style.display = "block";
+};
+//pour afficher le login
+btn_login.onclick = function (event) {
+      modal_inscript.style.display = "none";
+      modal_login.style.display = "block";
+};
+
 
 // style du header pour le burger
 function toggleBloc() {
