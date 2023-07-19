@@ -412,6 +412,7 @@ nav .header__btn{
     }
     .container__section4 div{
         padding: var(--padding-respo);
+        margin-bottom: 1rem;
     }
 /*---------------------section quatre = info molakisi-----------------------*/
     .info__molakisi{
