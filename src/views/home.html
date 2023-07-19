@@ -17,6 +17,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="../../public/css/style.css">
     <link rel="stylesheet" href="../../public/css/other_style.css">
+    <link rel="stylesheet" href="../../public/css/responsive_style.css">
 </head>
 
 <body>
@@ -219,6 +220,8 @@
 
             </div>
         </section>-->
+        
+        
         <!-- Le modal pour le login -->
         <section>
             <div id="id01" class="modal">
@@ -234,6 +237,11 @@
                             <input type="text" placeholder="Email" name="email" autocomplete="off" required>
                             <input type="password" placeholder="Mot de passe" name="psw" autocomplete="off" required>
                         </div>
+                        <!--div class="checkbox mb-3">
+                            <label>
+                            <input type="checkbox"  id="monBouton"> Afficher le mot de passe
+                            </label>
+                        </div-->
 
                         <!-- <label for="psw"><b>Mot de passe</b></label> -->
                         <div class="clearfix btn__connexion">
@@ -246,14 +254,52 @@
                        
                         <hr>
                         <div class="modal__flex">
-                            <p>Nouveau Membre ? <a href="./inscription_user.html" class="modal__bottom__a">S'inscrire</a>
+                            <p>Nouveau Membre ? <a href="#" class="modal__bottom__a" id="btn__inscript">S'inscrire</a>
+                            </p>
+                            <p><a href="#" class="modal__bottom__a"> Besoin d'aide ?</a></p>
+                        </div>
+
+
+
+
+
+                    </div>
+                </form>
+
+                <!-- formulaire d'inscription_user -->
+                <form class="modal-content" id="modal__inscript" action="#">
+                    <div class="container__modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Fermer le modal"><i class="bi bi-x-circle"></i></span>
+                        <h2>Inscription </h2>
+                        <p>Complètez pour vous inscrire.</p>
+                        <hr>
+                        <!-- <label for="email"><b>Email</b></label> -->
+                        <div class="input__modal">
+                            <input type="text" placeholder="Email" name="email" autocomplete="off" required>
+                        </div>
+                        <div class="input__modal">
+                            <input type="password" placeholder="Password" name="password" autocomplete="off" required>
+                        </div>
+                        <div class="input__modal">
+                            <input type="password" placeholder="Retaper votre Password" name="email" autocomplete="off" required>
+                        </div>
+                        <div class="clearfix btn__connexion">
+                            <button type="submit" class="connexion">S'inscrire </button>
+                            <!-- quand on clique ici, il nous amene vers le profil de l'user -->
+                        </div>
+                       
+                        <hr>
+                        <div class="modal__flex">
+                            <p>Déjà Membre ? <a href="#" class="modal__bottom__a" id="btn__login">Se connecter</a>
                                 <!-- <p>Nouveau Membre ? <a href="./trouver_tutors.html#Ltutors" class="modal__bottom__a">S'inscrire</a> -->
                             </p>
-                            <p><a href="" class="modal__bottom__a"> Besoin d'aide ?</a></p>
+                            <p><a href="#" class="modal__bottom__a"> Besoin d'aide ?</a></p>
                         </div>
 
 
                         <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+
 
 
                     </div>
@@ -292,7 +338,7 @@
                 </div>
                 <ul>
                     <li><a href=" https://api.whatsapp.com/send/?phone=243893404985&text&type=phone_number&app_absent=0 "><i class="bi bi-whatsapp"></i></a></li>
-                    <li><a href="https://web.facebook.com/molakisiservices"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://web.facebook.com/molakisiservices/?_rdc=1&_rdr "><i class="bi bi-facebook"></i></a></li>
                     <li><a href=""><i class="bi bi-twitter"></i></a></li>
                     <li><a href=""><i class="bi bi-pinterest"></i></a></li>
                 </ul>
@@ -309,6 +355,20 @@
 
     </main>
     <script src="../../public/js/modal.js"></script>
+    <script>
+        //pour afficher et cacher le mdp
+        document.getElementById( 'monBouton' ).addEventListener( "click", function() {
+        
+        attribut = document.getElementById( 'pass' ).getAttribute( 'type');
+        if(attribut == 'password'){
+            document.getElementById( 'pass' ).setAttribute( 'type', 'text');
+        } else {
+            document.getElementById( 'pass' ).setAttribute( 'type', 'password');
+        }
+        
+        });
+    </script>
+
 </body>
 
 </html>
