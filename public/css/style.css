@@ -1,9 +1,9 @@
 :root{
-    --primary-color: #e35f26dc;
+    --primary-color: #0a88cc;
     --secondary-color: #CCA659;
     --last-color: #525050;
     --other-color: #ececec;
-    --profiler-color: #E36026;
+    --profiler-color: #01304A;
     --partner-color: #FAE0D0;
     --font-size-main: 16px;
     --padding-main: 1rem 5rem;
@@ -194,7 +194,7 @@ nav .header__btn{
 
 /* le collaspe */
 .collapsible {
-    background-color: var(--primary-color);
+    background-color: var(--last-color);
     color: #eee;
     cursor: pointer;
     padding: 18px;
@@ -207,9 +207,9 @@ nav .header__btn{
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
-    background-color: #ccc;
+    background-color: var(--primary-color);
     border: 3px solid var(--primary-color);
-    color: var(--primary-color);
+    color: var(--other-color);
   }
   
   /* Style the collapsible content. Note: hidden by default */
@@ -359,7 +359,12 @@ nav .header__btn{
     
 /*---------------------section une =  presentation de trouver un répétiteur-----------------------*/
     .repetiteur{        
-        padding: 0rem;
+        /* padding: 0rem 0.5rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center;*/
+        padding: 0;
+
     }
     .bg_respo{
         background-color: #01304a6e; /*la bg du respo */
@@ -370,14 +375,19 @@ nav .header__btn{
         justify-content: center;
         align-items: center;
     }
-    .repetiteur .repetiteur__bloc__text p{
+    .repetiteur__bloc__text{
+        text-align: center;
+    }
+    .repetiteur__bloc__text p{
         width: 100%;
         font-size: 1.5rem;
+        padding: var(--padding-respo);
     }
     .repetiteur__bloc__text a{
         padding: var(--padding-respo);
-        margin: 0 0 0 8rem;
+        margin: 0;
         font-size: 0.8rem;
+        text-align: center;
     }
     .repetiteur__bloc__text a:hover{
         border: 4px inset var(--profiler-color);
@@ -391,10 +401,7 @@ nav .header__btn{
         text-align: center;
     }
     .bloc__bienvenue h2{
-        font-size: 1.5rem;
-    }
-    .bloc__bienvenue p{
-        padding: var(--padding-respo);
+        font-size: 1.1rem;
     }
 /*---------------------section trois =  les 4 blocs-----------------------*/
     .container__section4{
