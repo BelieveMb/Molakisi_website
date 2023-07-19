@@ -1,9 +1,9 @@
 :root{
-  --primary-color: #E36026;
+  --primary-color: #0a88cc;
   --secondary-color: #CCA659;
   --last-color: #525050;
   --other-color: #ececec;
-  --profiler-color: #E36026;
+  --profiler-color: #0a88cc;
   --partner-color: #FAE0D0;
   --font-size-main: 16px;
   --padding-main-tutor: 1.8rem 2rem;
@@ -137,6 +137,7 @@
     gap: 4rem;
     margin: 6rem 0 0 0;
     font-weight: 300;
+    color: var(--last-color);
   }
   .student__detail div i{
     font-size: 4rem;
