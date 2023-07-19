@@ -182,7 +182,10 @@
     padding: 0 1rem;
     width: 100%;
     min-width: 300px;
-  } 
+  }
+#modal__inscript{
+    display: none;
+  }
 }     
 @media only screen and (min-width: 300px) and (max-width: 850px) {
 
