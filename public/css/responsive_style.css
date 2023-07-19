@@ -160,9 +160,14 @@
       margin: 3rem 2rem;
   }
   /*##########-----le style pour le modal (other_style.css)------*/
+  .modal{
+    height: 100%; 
+    padding-top: 10px;
+  }
   .modal-content {
     margin: 1rem; /* 5% from the top, 15% from the bottom and centered */
     width: 90%;
+    overflow-x: visible;
   }
   .close {
     position: absolute;
@@ -179,3 +184,7 @@
     min-width: 300px;
   } 
 }     
+@media only screen and (min-width: 300px) and (max-width: 850px) {
+
+
+}
